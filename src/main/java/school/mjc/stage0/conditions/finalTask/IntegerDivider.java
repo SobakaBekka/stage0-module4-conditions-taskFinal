@@ -2,5 +2,16 @@ package school.mjc.stage0.conditions.finalTask;
 
 public class IntegerDivider {
     public void printCompletelyDivided(int dividend, int divider) {
+        int result = dividend / divider;
+        if(divider != 0) {
+            if (result * divider == dividend) {
+                System.out.println("can be divided completle");
+            } else {
+                System.out.println("cannot be divided completle");
+            }
+        }else {
+            System.out.println("division by zero");
+        }
+
     }
 }
